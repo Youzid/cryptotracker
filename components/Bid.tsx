@@ -14,17 +14,14 @@ const Bid = () => {
   const [ethLost, setEthLost] = useState(false);
   useEffect(() => {
     bidItems.length > 0 ? setBidShow(true) : setBidShow(false);
-    console.log(bidShow);
+
   }, [bidItems]);
-  console.log(Wallet);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setBidValue(parseFloat(e.target.value));
   };
 
-  // const handleSumbit=(e: React.ChangeEvent<HTMLInputElement>)=> {
-  //   e.preventDefault()
-  //  console.log("bitch")
-  // }
+
   const dispatch = useDispatch();
   const handleBid = () => {
     bidValue < Wallet && dispatch(decrementWallet(bidValue));
@@ -32,7 +29,7 @@ const Bid = () => {
     setInterval(() => setEthLost(false), 50);
   };
 
-  console.log();
+
 
   return (
     // <div className='  bg-red-600 fixed w-[200vh] h-[100vh] z-100'>
@@ -104,7 +101,6 @@ const Bid = () => {
                         {-bidValue.toFixed(3)}
                       </div>
                     </div>
-                    {/* <div className={` absolute pl-[10px] text-red-500   ${ethLost ? " opacity-1000 mb-10 ":"opacity-0  duration-1000 mb-20 "}`}>{ - (Wallet-bidValue).toFixed(3)}</div> */}
                   </div>
 
                   <input

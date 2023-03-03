@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import React, { useCallback } from "react";
+import React, { useCallback, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CoinCard from "../components/CryptoCurrencies/CoinCard";
 import Landing from "../components/CryptoCurrencies/LandingCurrencies";
@@ -26,11 +26,12 @@ interface Props {
 
 const cryptocurrencies = ({ currencies }: Props) => {
   const coins = currencies.coins;
+  const [iconError, setIconError] = useState(false)
   const period = "24h";
   //   const coinId = "razxDUgYGNAdQ"
 
   return (
-    <div className="sm:px-10    lg:px-20     overflow-x-hidden relative ">
+    <motion.div exit={{ opacity: 0, transition: { type: "easeIn", duration: 1 } }}     className="sm:px-10    lg:px-20     overflow-x-hidden relative ">
       <LandingCurrencies />
 
       <section className=" pt-40 ">
@@ -119,7 +120,8 @@ const cryptocurrencies = ({ currencies }: Props) => {
                             }}
                           ></div>
                           <Image
-                            src={`/coins/${coin.name}.png`}
+                             src={ `/coins/${coin.name}.png` ? `/coins/${coin.name}.png` : coin.iconUrl}
+                          
                             layout="fill"
                             objectFit="cover"
                             alt=""
@@ -153,10 +155,14 @@ const cryptocurrencies = ({ currencies }: Props) => {
                       <div className="relative  ">
                         <div className="w-full h-full z-2  absolute background22-gradiant pointer-events-none "></div>
                         <div className="w-full h-full z-2   absolute background2-gradiant pointer-events-none "></div>
+                        <Link  href={"./details/" + coin.uuid} className="" >
+
                         <MiniChart
                           historyCoin={historyCoin}
                           color={coin.color}
                         ></MiniChart>
+                        </Link>
+                       
                       </div>
                     </th>
                   </motion.tr>
@@ -166,7 +172,7 @@ const cryptocurrencies = ({ currencies }: Props) => {
           </motion.table>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

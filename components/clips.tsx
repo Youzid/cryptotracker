@@ -8,7 +8,7 @@ export const clips = orchestrate(
         sectionFour: { opacity:0 , translate:["0%","0%"] ,config: { damping: false },},
         light: { intensity: 0.2,  position: new Vector3( 77.35, 100.76, 40.98) ,config: { damping: true },},
       camera: { position: new Vector3(0, 0, 150), lookAt: new Vector3(0, 0, 0)  },  // a camera object (uses the lookAt field),
-      point1:{opacity:0.1 ,config: { damping: false }},
+      point1:{opacity:0.3 ,config: { damping: false }},
       point2:{opacity:0.3 ,config: { damping: false }},
       point3:{opacity:0.3 ,config: { damping: false }},
       point4:{opacity:0.3 ,config: { damping: false }},
@@ -22,6 +22,7 @@ export const clips = orchestrate(
         2:{
           opacity: helpers.state(0.3, "ease-in"),
         }
+        
       },
       point2:{
         1:{

@@ -130,8 +130,8 @@ hidden:{
 
 
   return (
-    <section className="w-full h-full lg:h-screen py-20 px-10  flex flex-col  lg:flex-row items-center  justify-center  sm:space-x-10">
-      <motion.div variants={mainVariants} initial="hidden" animate="visible" className="w-full lg:w-2/5 flex flex-col justify-center items-center  ">
+    <motion.section  exit={{ opacity: 0, transition: { type: "easeIn", duration: 10 } }}className="w-full h-full lg:h-screen py-20 px-10  flex flex-col  lg:flex-row items-center  justify-center  sm:space-x-10">
+      <motion.div   variants={mainVariants} initial="hidden" animate="visible" className="w-full lg:w-2/5 flex flex-col justify-center items-center  ">
         <div className="relative flex justify-center items-center">
           <Image
             className=""
@@ -243,7 +243,7 @@ hidden:{
           ))}
         </div>
       </motion.div>
-    </section>
+    </motion.section>
   );
 };
 

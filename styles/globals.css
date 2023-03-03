@@ -230,3 +230,7 @@ no-repeat ;
   }
 
 }
+
+canvas {
+  touch-action: none;
+}
