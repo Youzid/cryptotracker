@@ -1,5 +1,5 @@
 
-# 🌐Spotify🌐
+# 🌐Cryptotracker🌐
 A modern CryptoCurrencies details tracker and a 3d Nft Showcase, Managed the API data to be up to date with an optimized fetching using Nextjs SSR and Redux Query. Linked the canvas camera and lights to the scroll to create a cinematic scrolling experience.
 
 
