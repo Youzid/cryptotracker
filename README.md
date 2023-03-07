@@ -5,8 +5,8 @@ A modern CryptoCurrencies details tracker and a 3d Nft Showcase, Managed the API
 
 ## 📸 Screenshots 📸
 
-![App Screenshot](https://iili.io/HWGYaWX.md.png%22/468x300?text=App+Screenshot+Here)
-![App Screenshot](https://iili.io/HWGYYxt.md.png%22/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://iili.io/HWSyn6J.md.png%22/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://iili.io/HWSyCGa.md.png%22/468x300?text=App+Screenshot+Here)
 
 
 
