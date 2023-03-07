@@ -1,27 +1,42 @@
-# Next.js + Tailwind CSS Example
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+# 🌐Spotify🌐
+A modern CryptoCurrencies details tracker and a 3d Nft Showcase, Managed the API data to be up to date with an optimized fetching using Nextjs SSR and Redux Query. Linked the canvas camera and lights to the scroll to create a cinematic scrolling experience.
 
-## Deploy your own
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## 📸 Screenshots 📸
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+![App Screenshot](https://iili.io/HWGYaWX.md.png%22/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://iili.io/HWGYYxt.md.png%22/468x300?text=App+Screenshot+Here)
 
-## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+## 🔴 Demo 🔴
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+https://cryptotracker-youzid.vercel.app
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+##
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## 👨‍💻 Tech Stack 👨‍💻
+
+Next.Js, Redux, Typescript, Tailwind Framer, Three.Js, chart.Js, APIintegration, sanity
+
+## 💪Challenges💪
+
+
+   𝗹𝗶𝗺𝗶𝘁𝗲𝗱 𝗳𝗲𝘁𝗰𝗵𝗶𝗻𝗴 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝘀 𝗽𝗲𝗿 𝘀𝗲𝗰𝗼𝗻𝗱 :
+trying to fetch the coins charts details multiple times in one second was beyond the free API plan , so every time i load crypto the data i get only a few coins details
+✔️Solution✔️ : using redux query  retry properties managed to refetch data on fail
+
+	𝗟𝗶𝗻𝗸𝗶𝗻𝗴 𝘁𝗵𝗲 𝘀𝗰𝗿𝗼𝗹𝗹 𝘁𝗼 𝘁𝗵𝗲 𝗰𝗮𝗺𝗲𝗿𝗮 𝗺𝗼𝘃𝗺𝗲𝗻𝘁 :
+it looked easy at the beginning , then after using Drei's scroll control i noticed that it's not possible to set camera positions based on the scroll offset variable only , also the 2d elements weren't synchronised  with the 3d ones , 
+✔️Solution✔️ : i switched to scroll snapping to control the user experience and managed to orchestrate the camera positions with the 2d elments using a new library called "Jongleur", which had a few rendering problems i managed to fix with the creator.
+ 
+
+
+
+## 📧 Feedback 📧
+
+If you have any feedback, please reach out to me at
+
+-linkedin.com/in/youcefbenbouzid            
+-you.benbouzid@gmail.com 
